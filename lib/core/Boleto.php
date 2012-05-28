@@ -42,6 +42,28 @@ class Boleto{
     public $CodigoBarras;
     public $LinhaDigitavel;
     
+    
+    public $Demonstrativo;
+    public $Instrucao;
+    
+    public function getDemonstrativo() {
+        return $this->Demonstrativo;
+    }
+
+    public function setDemonstrativo($Demonstrativo) {
+        $this->Demonstrativo = $Demonstrativo;
+        return $this;
+    }
+
+    public function getInstrucao() {
+        return $this->Instrucao;
+    }
+
+    public function setInstrucao($Instrucao) {
+        $this->Instrucao = $Instrucao;
+        return $this;
+    }
+        
     /**
       * Configura os dados dos clientes a partir de um array
       *

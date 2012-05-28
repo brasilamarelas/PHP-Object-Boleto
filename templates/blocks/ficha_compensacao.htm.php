@@ -87,7 +87,7 @@
                     <div class="mensagens ">
                              <label>Instruções (Texto de responsabilidade do cedente)</label>
                              <?php
-                                
+                                echo $OB->Boleto->Instrucao;
                              ?>
                     </div>
                 

@@ -103,9 +103,7 @@
         <!-- Demonstrativo -->
         <div class="demonstrativo item">
             <label>Demonstrativo</label>
-            Detalhes da compra<br>
-            Detalhes da compra<br>
-            Detalhes da compra<br>
+            <?php echo $OB->Boleto->Demonstrativo;?>
         </div>
         <!-- Autenticação Mecânica -->
         <div class="autenticacao_mecanica">
