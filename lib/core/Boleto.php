@@ -133,6 +133,8 @@ class Boleto{
         else{
             throw new Exception('Boleto::setNossoNumero só permite números');
         }
+//        $this->NossoNumero = $valor;
+//        return $this;
         
     }
     

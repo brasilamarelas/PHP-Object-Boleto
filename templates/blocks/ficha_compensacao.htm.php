@@ -110,16 +110,13 @@
                          <?php
                             echo $OB->Vendedor->Agencia . '-' . Math::Mod11($OB->Vendedor->Agencia)
                                  . ' / ' .
-                                 $OB->Vendedor->Conta . '-' . Math::Mod11($OB->Vendedor->Conta)
+                                 $OB->Vendedor->Conta
                             ;
                             ?>
                     </div>
                     <div class="">
                          <label>Nosso número</label>
-                         <?php
-                            echo $OB->Boleto->NossoNumero . '-' . Math::Mod11($OB->Boleto->NossoNumero)
-                            ;
-                            ?>
+                         <?php echo $OB->Vendedor->Carteira."/".$OB->Boleto->NossoNumero . '-' . Math::Mod11($OB->Boleto->NossoNumero);?>
                     </div>
                     <div class="">
                          <label>(=) Valor do documento</label>
