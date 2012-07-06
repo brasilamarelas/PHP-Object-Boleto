@@ -24,7 +24,7 @@ class Itau extends Banco{
     public $Codigo = '341';
     public $Nome = 'Itau';
     public $Css;
-    public $Image = 'itau.png';
+    public $Image = '341.jpg';
     
     /*
         @var array $tamanhos

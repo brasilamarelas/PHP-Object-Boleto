@@ -22,7 +22,7 @@
                         <!--Cedente-->
                         <div class="cedente item">
                              <label>Cedente </label>
-                             <?php echo $OB->Vendedor->RazaoSocial; ?>
+                             <?php echo $OB->Vendedor->RazaoSocial." - CNPJ: ".$OB->Vendedor->Cpf ?>
                         </div>
                     
                     <!--  linha3  -->
@@ -40,11 +40,13 @@
                         <!--especiedocumento-->
                         <div class="espec_doc item">
                             <label>Espécie Doc.</label>
+                            <b>RC</b>
             
                         </div>
                         <!--aceite-->
                         <div class="aceite item">
                             <label>Aceite</label>
+                            <b>N</b>
             
                         </div>
                         <!--data processamento-->
@@ -107,12 +109,7 @@
                     </div>
                     <div class="">
                          <label>Agência / Código cedente </label>
-                         <?php
-                            echo $OB->Vendedor->Agencia . '-' . Math::Mod11($OB->Vendedor->Agencia)
-                                 . ' / ' .
-                                 $OB->Vendedor->Conta
-                            ;
-                            ?>
+                         <?php echo $OB->Vendedor->Agencia . '-' . $OB->Vendedor->Conta;?>
                     </div>
                     <div class="">
                          <label>Nosso número</label>
@@ -149,10 +146,12 @@
                          <label>Sacado</label>
                          <?php
                             echo $OB->Cliente->Nome
-                               . '<br>'
-                               . 'CPF: ' . $OB->Cliente->Cpf
-                               . '<br>'
+                               . '<br/>'
+                               . 'CPF/CNPJ: ' . $OB->Cliente->Cpf
+                               . '<br/>'
                                . $OB->Cliente->Endereco
+                               . '<br/>'
+                               . $OB->Cliente->Cep
                                ;
                          ?>
                     </div>
