@@ -3,6 +3,9 @@ div#container{
     font-family:arial;
     font-size:12px;
 }
+div#container div.mensagens_optativa{
+    font-size: 14px;
+}
     div#container div, div#container{
         float:left;
     }
